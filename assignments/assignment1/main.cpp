@@ -9,7 +9,7 @@ using namespace std;
  * values for the price and the quantity, display an error message otherwise.
  */
 
-const float TAX = .08;
+const float TAX = .0875; // 8.75% sales tax
 
 float round(float);
 

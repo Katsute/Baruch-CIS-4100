@@ -7,3 +7,4 @@ Debug
 
 cmake-build-debug
 CMakeLists.txt
+*.exe

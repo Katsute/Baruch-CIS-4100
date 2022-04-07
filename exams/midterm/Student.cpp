@@ -1,3 +1,4 @@
+#pragma once // prevent redefinition
 #include "Person.cpp"
 
 class Student : public Person {
@@ -50,14 +51,14 @@ class Student : public Person {
         }
 
         void setCourse(const int i, const string& course) {
-            if(i > 0 && i < size)
+            if(i >= 0 && i < size)
                 courses[i] = course;
         }
 
         // (13) Use the concept of redefinition/overriding using a
         //      method of your choice.
-        string toString() const override {
-            return "Student{name: " + name + ", gpa: " + to_string(gpa) + "}";
+        string getType() const override {
+            return "Student";
         }
 
 };

@@ -36,8 +36,8 @@ class Undergraduate: public Student {
 
         // (13) Use the concept of redefinition/overriding using a
         //      method of your choice.
-        string toString() const override {
-            return "Undergraduate{name: " + name + ", gpa: " + to_string(gpa) + "}";
+        string getType() const override {
+            return "Undergraduate";
         }
 
 };

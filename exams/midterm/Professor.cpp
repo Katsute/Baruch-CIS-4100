@@ -33,8 +33,8 @@ class Professor : public Employee {
 
         // (13) Use the concept of redefinition/overriding using a
         //      method of your choice.
-        string toString() const override {
-            return "Employee{name: " + name + ", salary: " + to_string(salary) + ", status: " + status + "}";
+        string getType() const override {
+            return "Professor";
         }
 
 };

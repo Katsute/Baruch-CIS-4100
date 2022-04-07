@@ -26,8 +26,8 @@ class Staff : public Employee {
 
         // (13) Use the concept of redefinition/overriding using a
         //      method of your choice.
-        string toString() const override {
-            return "Employee{name: " + name + ", salary: " + to_string(salary) + ", manager: " + (manager ? "true": "false") + "}";
+        string getType() const override {
+            return "Staff";
         }
 
 };

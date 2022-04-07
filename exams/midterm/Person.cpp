@@ -1,3 +1,4 @@
+#pragma once // prevent redefinition
 #include <iostream>
 
 using namespace std;
@@ -33,8 +34,8 @@ class Person {
 
         // (13) Use the concept of redefinition/overriding using a
         //      method of your choice.
-        virtual string toString() const {
-            return "Person{name: " + name + "}";
+        virtual string getType() const {
+            return "Person";
         }
 
 };

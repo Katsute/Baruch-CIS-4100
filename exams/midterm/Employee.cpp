@@ -1,3 +1,4 @@
+#pragma once // prevent redefinition
 #include "Person.cpp"
 
 class Employee : public Person {
@@ -36,8 +37,8 @@ class Employee : public Person {
 
         // (13) Use the concept of redefinition/overriding using a
         //      method of your choice.
-        string toString() const override {
-            return "Employee{name: " + name + ", salary: " + to_string(salary) + "}";
+        string getType() const override {
+            return "Employee";
         }
 
 };

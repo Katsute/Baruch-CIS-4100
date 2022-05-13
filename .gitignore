@@ -12,3 +12,5 @@ CMakeLists.txt
 
 *.rar
 *.zip
+
+output.txt

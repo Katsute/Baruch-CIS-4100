@@ -6,7 +6,7 @@
 
 using namespace std;
 
-const int MAX_ENEMY = 10;
+const int MAX_ENEMY = 20;
 
 int main() {
     srand(time(0));

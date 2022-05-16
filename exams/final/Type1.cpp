@@ -43,7 +43,7 @@ void Type1::move_position() {
 
 void Type1::fire_weapon() {
     if(isDead()){
-        print("Dead! No weapon fired");
+        print("Dead! Could not attack");
     }else{
         print(attacks[randInt(0, 2)] + '!');
     }
@@ -51,13 +51,13 @@ void Type1::fire_weapon() {
 
 void Type1::update_status() {
     if(isDead()){
-        print("Dead! Status was 0");
+        print("Already dead! Status was 0");
     }else{
         int ns = getStatus() - 1;
         setStatus(ns);
         if(ns > 0)
             print("HIT! Status is now " + to_string(ns));
         else
-            print("DEAD! Status is now 0");
+            print("KILL! Status is now 0");
     }
 }

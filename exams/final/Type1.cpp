@@ -1,7 +1,7 @@
 #include "Type1.h"
 
 const string names[3] = {"PitBull", "Lion", "Tiger"};
-const string attacks[3] = {"Hit", "Scratch", "Bite"};
+const string attacks[3] = {"Hit", "Slash", "Bite"};
 
 const int SPEED = 6;
 
@@ -42,11 +42,10 @@ void Type1::move_position() {
 }
 
 void Type1::fire_weapon() {
-    if(isDead()){
+    if(isDead())
         print("Dead! Could not attack");
-    }else{
+    else
         print(attacks[randInt(0, 2)] + '!');
-    }
 }
 
 void Type1::update_status() {
@@ -56,7 +55,7 @@ void Type1::update_status() {
         int ns = getStatus() - 1;
         setStatus(ns);
         if(ns > 0)
-            print("HIT! Status is now " + to_string(ns));
+            print("OUCH! Status is now " + to_string(ns));
         else
             print("KILL! Status is now 0");
     }

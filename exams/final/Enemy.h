@@ -6,6 +6,7 @@
 using namespace std;
 
 /**
+
     An enemy is approximately:
 
     ↓ (x,y)
@@ -25,10 +26,10 @@ using namespace std;
 300 ║     ← low →
 400 ║
 500 ║     ← ground →   @ 3p/s or 6p/s
-600 ║______________________________
-                       (800, 600) ↑
+600 ╚════════════════════════════════
+                         (800, 600) ↑
 
-    only allow ← x → bound movement, initialize y
+    objects only move on x-axis
 
  */
 

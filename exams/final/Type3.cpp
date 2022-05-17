@@ -53,13 +53,12 @@ void Type3::move_position() {
 }
 
 void Type3::fire_weapon() {
-    if(isDead()){
+    if(isDead())
         print("Dead! No weapon was fired");
-    }else if(ammo <= 0){
+    else if(ammo <= 0)
         print("Empty! No weapon was fired");
-    }else{
-        print("Fired shot! " + to_string(--ammo) + " left");
-    }
+    else
+        print("Fired a shot! " + to_string(--ammo) + " left");
 }
 
 void Type3::update_status() {
@@ -69,7 +68,7 @@ void Type3::update_status() {
         int ns = getStatus() - 1;
         setStatus(ns);
         if(ns > 0)
-            print("HIT! Status is now " + to_string(ns));
+            print("OUCH! Status is now " + to_string(ns));
         else
             print("KILL! Status is now 0");
     }

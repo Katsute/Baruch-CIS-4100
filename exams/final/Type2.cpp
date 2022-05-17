@@ -56,13 +56,12 @@ void Type2::move_position() {
 }
 
 void Type2::fire_weapon() {
-    if(isDead()){
+    if(isDead())
         print("Dead! No weapon was fired");
-    }else if(ammo <= 0){
+    else if(ammo <= 0)
         print("Empty! No weapon was fired");
-    }else{
-        print("Fired missile! " + to_string(--ammo) + " left");
-    }
+    else
+        print("Fired a missile! " + to_string(--ammo) + " left");
 }
 
 void Type2::update_status() {
@@ -72,7 +71,7 @@ void Type2::update_status() {
         int ns = getStatus() - 1;
         setStatus(ns);
         if(ns > 0)
-            print("HIT! Status is now " + to_string(ns));
+            print("BANG! Status is now " + to_string(ns));
         else
             print("BOOM! Status is now 0");
     }

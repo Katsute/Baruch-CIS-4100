@@ -71,7 +71,7 @@ void Type2::update_status() {
         int ns = getStatus() - 1;
         setStatus(ns);
         if(ns > 0)
-            print("BANG! Status is now " + to_string(ns));
+            print("PING! Status is now " + to_string(ns));
         else
             print("BOOM! Status is now 0");
     }
